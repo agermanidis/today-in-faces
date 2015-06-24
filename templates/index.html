@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <style>
+      body {
+        background: black;
+      }
+    </style>
+    <title>Today in Faces</title>
+  </head>
+  <body>
+    {% for face in faces %}
+      <a href="{{face.href}}" target="_blank"><img src="{{face.src}}"></img></a>
+    {% endfor %}
+  </body>
+</html>
+
